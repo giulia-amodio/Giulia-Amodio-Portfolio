@@ -46,13 +46,19 @@ body {
     opacity: 0.6;
 }
 
-
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.indice {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 10px 0 30px 0;
 }
 
+.indice a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.indice a:hover {
+    opacity: 0.6;
+}
