@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./projects.css">
 </head>
 <body>
+
     <header class="navbar container">
         <h1 class="logo">Projects</h1>
 
@@ -15,18 +16,75 @@
                 <li><a href="./index.html">Main</a></li>
                 <li><a href="./aboutme.html">About me</a></li>
             </ul>
-
-            
         </nav>
     </header>
-        <div class="container">
-            <ul class="indice">
-                <li><a href=".">Graphics and illustrations</a></li>
-                <li><a href=".">Editorial design</a></li>
-                <li><a href=".">Branding and corporate design</a></li>
-                <li><a href=".">Web design</a></li>
-            </ul>
-        </div>
-   
+
+    <!-- FILTRI -->
+    <section class="filters container">
+        <ul>
+            <li><button class="filter-btn active" data-filter="all projects">All</button></li>
+            <li><button class="filter-btn" data-filter="graphics">Graphics and illustrations</button></li>
+            <li><button class="filter-btn" data-filter="editorial">Editorial design</button></li>
+            <li><button class="filter-btn" data-filter="branding">Branding and corporate design</button></li>
+            <li><button class="filter-btn" data-filter="web">Web design</button></li>
+        </ul>
+    </section>
+
+    <!-- GRIGLIA -->
+    <main class="container">
+        <section class="projects-grid">
+
+            <a href="#" class="project-card" data-category="graphics">
+                <img src="./img/editoria/binga/foto copertina.jpg">
+            </a>
+
+            <a href="#" class="project-card" data-category="branding">
+                <img src="./img/branding/hacienda brandbook/foto brandbook.jpg">
+            </a>
+
+            <a href="#" class="project-card" data-category="editorial">
+                <img src="./img/editoria/bibbia/vangeli.JPG">
+            </a>
+
+            <a href="#" class="project-card" data-category="editorial">
+                <img src="./img/editoria/fondamenti/copertina_.png">
+            </a>
+
+            <a href="#" class="project-card" data-category="graphics">
+                <img src="./img/editoria/binga/foto copertina.jpg">
+            </a>
+
+            <a href="#" class="project-card" data-category="web">
+                <img src="./img/branding/hacienda brandbook/foto brandbook.jpg">
+            </a>
+
+        </section>
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".project-card");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                // attiva bottone
+                buttons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                const filter = button.dataset.filter;
+
+                cards.forEach(card => {
+                    if (filter === "all" || card.dataset.category === filter) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+
+            });
+        });
+    </script>
+
 </body>
 </html>
