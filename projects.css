@@ -5,9 +5,11 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "futura-100", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #f8f5ef;
-    color: #2b2b2b;
+    color: rgb(109, 32, 32);
 }
 
 .container {
@@ -52,6 +54,9 @@ body {
 }
 
 .filters ul {
+    font-family: "futura-100", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     gap: 25px;
     list-style: none;
@@ -59,6 +64,9 @@ body {
 }
 
 .filter-btn {
+    font-family: "futura-100", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background: none;
     border: none;
     font-size: 15px;
