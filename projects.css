@@ -19,11 +19,25 @@ body {
 }
 
 /* NAVBAR */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #f8f5ef;
+    z-index: 1000;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 110px;
+    min-height: 100px;
+}
+
+main {
+    padding-top: 100px;
 }
 
 .logo {
@@ -50,7 +64,7 @@ body {
 
 /* FILTRI */
 .filters {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 30px;
 }
 

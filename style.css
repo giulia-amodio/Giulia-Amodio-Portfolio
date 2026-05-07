@@ -21,10 +21,25 @@ body {
 /* NAVBAR */
 
 .navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 110px;
+
+    min-height: 100px;
+
+    background-color: #f8f5ef;
+
+    z-index: 1000;
+}
+main {
+    padding-top: 130px;
 }
 
 .logo {
