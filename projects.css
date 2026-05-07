@@ -94,6 +94,7 @@ body {
 }
 
 .project-card {
+    position: relative;
     display: block;
     aspect-ratio: 4 / 3;
     overflow: hidden;
@@ -110,6 +111,68 @@ body {
     transform: scale(1.02);
     opacity: 0.95;
 }
+.project-title {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+
+    color: white;
+    font-size: 18px;
+    font-family: "futura-100", sans-serif;
+
+    text-shadow: 0 1px 20px rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition: all 0.35s ease;
+
+    z-index: 2;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.55) 28%,
+        rgba(0, 0, 0, 0.15) 55%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+
+    top: 2%;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+
+    background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72),
+    rgba(0, 0, 0, 0.18),
+    rgba(0, 0, 0, 0)
+    );
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+
+    pointer-events: none;
+}
+
+.project-card:hover .project-title {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -125,3 +188,4 @@ body {
         padding-bottom: 20px;
     }
 }
+
