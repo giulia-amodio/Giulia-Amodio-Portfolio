@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -39,6 +39,7 @@ body {
 }
 
 .menu a {
+    font-size: 28px;
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -86,7 +87,7 @@ body {
     font-size: 28px;
     line-height: 1.4;
     max-width: 750px;
-    margin-bottom: 22px;
+    margin-bottom: 5px;
 }
 
 .project-meta {
@@ -106,7 +107,7 @@ body {
 /* GALLERY */
 
 .project-gallery {
-    padding-bottom: 80px;
+    padding-bottom: 1%;
 }
 
 .gallery-two {
@@ -139,6 +140,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 24px;
 }
 
 /* RESPONSIVE */

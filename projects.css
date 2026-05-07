@@ -5,7 +5,7 @@
 }
 
 body {
-   font-family: "futura-100", sans-serif;
+    font-family: "futura-100", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #f8f5ef;
@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -38,6 +38,7 @@ body {
 }
 
 .menu a {
+    font-size: 28px;
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -69,7 +70,7 @@ body {
     font-style: normal;
     background: none;
     border: none;
-    font-size: 15px;
+    font-size: 21px;
     cursor: pointer;
     color: #555;
     transition: all 0.3s ease;
